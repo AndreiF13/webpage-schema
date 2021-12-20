@@ -51,7 +51,7 @@ class Webpage_Schema_Public {
 		$this->plugin_name = $plugin_name;
 		$this->version = $version;
 		add_action( 'wp_head', array( $this, 'generate_code' ), 10, 1 );
-		// add_action( 'admin_init', [ $this, 'generate_code' ] );
+
 	}
 
 	/**
@@ -116,9 +116,8 @@ class Webpage_Schema_Public {
 		}
 
 		$schema_content = get_post_meta( $this->post_id, 'webpage_schema_jsonld', true );
-		if ( is_singular() ) {
-			return '<script type="application/ld+json" class="webpage-schema">' . wp_kses_post( $schema_content ) . '</script>' . "\n";
-		}
-		return false;
+
+		echo '<script type="application/ld+json" class="webpage-schema">' . wp_kses_post( $schema_content ) . '</script>' . "\n";
+
 	}
 }

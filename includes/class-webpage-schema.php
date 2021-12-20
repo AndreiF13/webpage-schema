@@ -188,6 +188,7 @@ class Webpage_Schema {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 		$this->loader->add_action( 'wp_head', $plugin_public, 'generate_code' );
+
 	}
 
 	/**
@@ -228,24 +229,6 @@ class Webpage_Schema {
 	 */
 	public function get_version() {
 		return $this->version;
-	}
-
-	/**
-	 * Generates script tag and add it to the WebPage DOM.
-	 *
-	 * @since     1.0.0
-	 * @return    string    The version number of the plugin.
-	 */
-	public function generate_code() {
-
-		global $post;
-
-		if ( is_singular() ) {
-			$this->post    = $post;
-			$this->post_id = $post->ID;
-		}
-
-		echo $this->post_id;
 	}
 
 }
