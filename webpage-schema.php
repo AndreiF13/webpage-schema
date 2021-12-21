@@ -8,19 +8,19 @@
  * registers the activation and deactivation functions, and defines a function
  * that starts the plugin.
  *
- * @link              https://webdesignwordpress.eu
+ * @link              https://github.com/AndreiF13/webpage-schema
  * @since             1.0.0
  * @package           Webpage_Schema
  *
  * @wordpress-plugin
- * Plugin Name:       WebPage Custom Schema.org (JSON-LD)
+ * Plugin Name:       WebPage Custom Schema (Schema.org JSON-LD)
  * Plugin URI:        https://github.com/AndreiF13/webpage-schema
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       WebPage Schema Plugin allows you to use your custom full-featured schema. Schema (JSON-LD) is the most important factor in search engine optimization.
  * Version:           1.0.0
  * Author:            AndreiF13
  * Author URI:        https://webdesignwordpress.eu
- * License:           GPL-2.0+
- * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * License:           GPL-3.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-3.0-standalone.html
  * Text Domain:       webpage-schema
  * Domain Path:       /languages
  */
