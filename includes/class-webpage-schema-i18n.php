@@ -6,7 +6,7 @@
  * Loads and defines the internationalization files for this plugin
  * so that it is ready for translation.
  *
- * @link       https://webdesignwordpress.eu
+ * @link       https://github.com/AndreiF13/webpage-schema/
  * @since      1.0.0
  *
  * @package    Webpage_Schema

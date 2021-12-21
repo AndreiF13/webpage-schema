@@ -2,7 +2,7 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://webdesignwordpress.eu
+ * @link       https://github.com/AndreiF13/webpage-schema/
  * @since      1.0.0
  *
  * @package    Webpage_Schema
@@ -55,52 +55,6 @@ class Webpage_Schema_Public {
 	}
 
 	/**
-	 * Register the stylesheets for the public-facing side of the site.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_styles() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Webpage_Schema_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Webpage_Schema_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/webpage-schema-public.css', array(), $this->version, 'all' );
-
-	}
-
-	/**
-	 * Register the JavaScript for the public-facing side of the site.
-	 *
-	 * @since    1.0.0
-	 */
-	public function enqueue_scripts() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Webpage_Schema_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Webpage_Schema_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/webpage-schema-public.js', array( 'jquery' ), $this->version, false );
-
-	}
-
-	/**
 	 * Generates script tag and add it to the WebPage DOM.
 	 *
 	 * @since     1.0.0
@@ -117,7 +71,7 @@ class Webpage_Schema_Public {
 
 		$schema_content = get_post_meta( $this->post_id, 'webpage_schema_jsonld', true );
 
-		echo '<script type="application/ld+json" class="webpage-schema">' . wp_kses_post( $schema_content ) . '</script>' . "\n";
+		echo "\n" . '<script type="application/ld+json" class="webpage-schema">' . wp_kses_post( $schema_content ) . '</script>' . "\n";
 
 	}
 }

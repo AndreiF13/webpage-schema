@@ -19,7 +19,7 @@
  * For more information, see the following discussion:
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
- * @link       https://webdesignwordpress.eu
+ * @link       https://github.com/AndreiF13/webpage-schema/
  * @since      1.0.0
  *
  * @package    Webpage_Schema
@@ -28,4 +28,16 @@
 // If uninstall not called from WordPress, then exit.
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
+}
+
+$args = array(
+	'numberposts'   => -1,
+	'post_status' 	=> 'any',
+	'meta_key'      => 'webpage_schema_jsonld',
+);
+
+$all_posts_with_schema = get_posts( $args );
+ 
+foreach( $all_posts_with_schema as $postItem ) {
+    delete_post_meta( $postItem->ID, 'webpage_schema_jsonld' );
 }

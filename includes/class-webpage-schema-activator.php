@@ -3,7 +3,7 @@
 /**
  * Fired during plugin activation
  *
- * @link       https://webdesignwordpress.eu
+ * @link       https://github.com/AndreiF13/webpage-schema/
  * @since      1.0.0
  *
  * @package    Webpage_Schema

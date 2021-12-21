@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: AndreiF13
-Donate link: https://webdesignwordpress.eu/webpage-schema/
+Donate link: https://github.com/AndreiF13/webpage-schema//webpage-schema/
 Tags: metabox, meta-box, schema, json-ld, schema.org, rich-snippets, seo
 Requires at least: 5.3.0
 Tested up to: 5.8
@@ -19,9 +19,10 @@ Build your custom schema for each page/post you publish in your website:
 - Advanced SEO documentation https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
 - Schema.org Validator https://validator.schema.org/ 
 - Google Rich Validator Tool (Rich Results Test) https://search.google.com/test/rich-results/result
-- JS code minifier https://www.minifier.org/
 
-Note: Disable schema feature from the SEO plugin that you currently use.
+Notes: 
+- Disable schema feature from the SEO plugin that you currently use.
+- Do not minify the code, plugins like autoptimize will do that job for the entire page.
 
 == Installation ==
 

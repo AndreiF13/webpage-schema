@@ -18,5 +18,5 @@ msgid "JSON-LD Schema"
 msgstr ""
 
 #: /includes/class-webpage-schema-metabox.php:74
-msgid "Paste here your custom schema including script tag. TIP: minify the code before."
+msgid "Paste here your custom schema including script tag. TIP: Do not minify the code, plugins like autoptimize will do that job for the entire page."
 msgstr ""

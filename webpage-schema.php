@@ -1,24 +1,11 @@
 <?php
-
 /**
- * The plugin bootstrap file
- *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
- * @link              https://github.com/AndreiF13/webpage-schema
- * @since             1.0.0
- * @package           Webpage_Schema
- *
- * @wordpress-plugin
  * Plugin Name:       WebPage Custom Schema (Schema.org JSON-LD)
  * Plugin URI:        https://github.com/AndreiF13/webpage-schema
  * Description:       WebPage Schema Plugin allows you to use your custom full-featured schema. Schema (JSON-LD) is the most important factor in search engine optimization.
  * Version:           1.0.0
  * Author:            AndreiF13
- * Author URI:        https://webdesignwordpress.eu
+ * Author URI:        https://github.com/AndreiF13/webpage-schema/
  * License:           GPL-3.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-3.0-standalone.html
  * Text Domain:       webpage-schema

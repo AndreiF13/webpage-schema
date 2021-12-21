@@ -71,7 +71,7 @@ class WebPage_Schema_MetaBox {
 		$jsonld = get_post_meta( $post->ID, 'webpage_schema_jsonld', true );
 	?>
 		<p>
-			<textarea class="widefat" id="webpage_schema_jsonld" name="webpage_schema_jsonld" placeholder="<?php esc_attr_e( 'Paste here your custom schema including script tag. TIP: minify the code before.', 'webpage-schema' ); ?>"><?php echo esc_html($jsonld); ?></textarea>
+			<textarea class="widefat" id="webpage_schema_jsonld" name="webpage_schema_jsonld" placeholder="<?php esc_attr_e( 'Paste here your custom schema including script tag. TIP: Do not minify the code, plugins like autoptimize will do that job for the entire page.', 'webpage-schema' ); ?>"><?php echo esc_html($jsonld); ?></textarea>
 		</p>
 
 	<?php
