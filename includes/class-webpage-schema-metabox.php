@@ -29,7 +29,7 @@ class WebPage_Schema_MetaBox {
 		foreach ( $post_types as $post_type ) {
 			add_meta_box(
 				'st_page_metabox'
-				,__( 'JSON-LD', 'webpage-schema' )
+				,__( 'JSON-LD Schema', 'webpage-schema' )
 				,array( $this, 'render_meta_box_content' )
 				,$post_type
 				,'side'
@@ -71,7 +71,7 @@ class WebPage_Schema_MetaBox {
 		$jsonld = get_post_meta( $post->ID, 'webpage_schema_jsonld', true );
 	?>
 		<p>
-			<textarea class="widefat" id="webpage_schema_jsonld" name="webpage_schema_jsonld" placeholder="Paste here your custom schema.org object including script tag"><?php echo esc_html($jsonld); ?></textarea>
+			<textarea class="widefat" id="webpage_schema_jsonld" name="webpage_schema_jsonld" placeholder="<?php esc_attr_e( 'Paste here your custom schema including script tag. TIP: minify the code before.', 'webpage-schema' ); ?>"><?php echo esc_html($jsonld); ?></textarea>
 		</p>
 
 	<?php

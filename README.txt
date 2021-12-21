@@ -1,32 +1,41 @@
 === Plugin Name ===
 Contributors: AndreiF13
-Donate link: https://webdesignwordpress.eu
-Tags: metabox, schema
+Donate link: https://webdesignwordpress.eu/webpage-schema/
+Tags: metabox, meta-box, schema, json-ld, schema.org, rich-snippets, seo
 Requires at least: 5.3.0
 Tested up to: 5.8
 Stable tag: 1.0
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License: GPL-3.0-or-later
+License URI: https://www.gnu.org/licenses/gpl-3.0-standalone.html
 
-WebPage Schema Plugin that allows you to use your custom Schema.org and save your money from SEO premium plugins.
+WebPage Schema Plugin allows you to use your custom full-featured schema. Schema (JSON-LD) is the most important factor in search engine optimization.
 
 == Description ==
 
-WebPage Schema Plugin that allows you to use your custom Schema.org and save your money from SEO premium plugins.
- 
+WebPage Schema Plugin allows you to use your custom full-featured schema. 
+Schema (JSON-LD) is the most important factor in search engine optimization.
+Build your custom schema for each page/post you publish in your website:
+- Schema documentation https://schema.org/ or https://www.w3.org/TR/json-ld11/
+- Advanced SEO documentation https://developers.google.com/search/docs/advanced/structured-data/intro-structured-data
+- Schema.org Validator https://validator.schema.org/ 
+- Google Rich Validator Tool (Rich Results Test) https://search.google.com/test/rich-results/result
+- JS code minifier https://www.minifier.org/
+
+Note: Disable schema feature from the SEO plugin that you currently use.
+
 == Installation ==
 
 This section describes how to install the plugin and get it working.
 
 1. Upload `webpage-schema.zip` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Paste you schema (json-ld including script tag) on each metabox's page/post/custom post type.
+3. Paste you schema (json-ld code including script tag) on each metabox's page/post/custom-post-type.
 
 == Frequently Asked Questions ==
 
-= Popular SEO plugins doesn't have this feature? =
+= Popular SEO plugins doesn't have the schema feature? =
 
-All of them have it, but is incomplete in the free version of them. You can build your own schema using Google Rich Validator Tool (Rich Results Test) and simply paste it on metabox. I saw that there are missing/obsolete fields even on premium version.
+All of them have it, but is incomplete in the free version. You can build your own full-featured schema using Schema.org Validator or Google Rich Validator Tool (Rich Results Test) and simply paste the code on page/post/custom-post-type metabox.
 
 == Screenshots ==
 

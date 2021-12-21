@@ -1,0 +1,23 @@
+{
+  "name": "webpage-schema",
+  "version": "1.0.0",
+  "description": "WebPage Schema.org",
+  "main": "index.js",
+  "scripts": {
+    "pot": "wpi18n makepot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreiF13/webpage-schema.git"
+  },
+  "author": "AndreiF13",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreiF13/webpage-schema/issues"
+  },
+  "homepage": "https://github.com/AndreiF13/webpage-schema#readme",
+  "devDependencies": {
+    "node-wp-i18n": "^1.2.6",
+    "wp-pot": "^1.9.9"
+  }
+}
